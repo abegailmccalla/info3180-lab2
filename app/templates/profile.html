@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="profile">
+    <div class="UpperProfileTab">
+        <img src="{{ url_for('static', filename='me.jpg')}}" alt="UCC Academy graduate">
+        <h1>Abegail McCalla</h1>
+        <p>@x1_tunnel_vision</p>
+        <p>St. Andrew, Jamaica</p>
+        <p>{{ date }}</p>
+    </div>    
+    <div class="LowerProfileTab">
+        <p>Dedicated and ambitious student, majoring in science, technology, engineering, and mathematics (STEM). Disciplined with paramilitary experience due to serving in the Jamaica Combined Cadet Force, effectively and efficiently leading and guiding cadet troops, overseeing their day-to-day training, and ensuring their wellbeing. Possess a lifelong passion for science and the military lifestyle. Skilled in areas such as computing, socializing, maintaining professionalism, along with quick and analytical thinking necessary to run a successful operation. Possess strong problem-solving abilities and pay attention to details. Focused on contributing to operations and projects while developing important skills and foundational career knowledge.</p>    
+        <div class="grid-container">
+            <p>7</p>
+            <p>100</p>
+            <p>250k</p>
+            <p>Posts</p>
+            <p>Following</p>
+            <p>Followers</p>
+        </div>
+        <button>Follow</button>
+    </div>
+</div>
+{% endblock %}
